@@ -4,7 +4,8 @@ import styles from './App.module.css';
 import PasswordAnswer from './PasswordAnswer';
 
 import NiceTry from './Nice Try.jpg';
-import Answer from './Answer.jpg';
+import Answer3 from './Answer.jpg';
+import Answer2 from './Puzzle 2 Solution.jpg';
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
             <PasswordAnswer imgSrc={NiceTry} correctAnswer="877" hint="It's a 3 digit number."/>
           </Route>
           <Route path="/answer-3">
-            <PasswordAnswer imgSrc={Answer} correctAnswer="936" hint="It's a 3 digit number." />
+            <PasswordAnswer imgSrc={Answer3} correctAnswer="936" hint="It's a 3 digit number." />
+          </Route>
+          <Route path="/answer-4">
+            <PasswordAnswer imgSrc={Answer2} correctAnswer="936" hint="It's a 3 digit number." />
           </Route>
           <Route path="/">
             <h1>Welcome to Gather Town Escape Room!</h1>
